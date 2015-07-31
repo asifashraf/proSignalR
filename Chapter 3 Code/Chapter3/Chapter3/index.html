@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns=" http://www.w3.org/1999/xhtml ">
+<head runat="server">
+    <title>Chapter 3 - Getting Started with Hub Implementation</title>
+</head>
+<body>
+    <script src="Scripts/jquery-1.6.4.js"></script>
+    <script src="Scripts/jquery.signalR-2.1.2.js"></script>
+    <script src="/signalr/hubs" type="text/javascript"></script>
+    <script type="text/javascript">
+        function logg(a,b) {
+            console.log(a, b);
+        }
+
+        $(function () {
+            var broadcaster = $.connection.firstHub;
+            broadcaster.client.displayText = function (name, message) {
+                logg(name, message);
+                $('#messages').append('<li>' + name + ' said: ' + message + '</li>');
+            };
+
+            $.connection.hub.start().done(function () {
+                $("#join").click(function () {
+                    console.log("join clicked");
+                    broadcaster.server.join($('#groupName').val());
+                    broadcaster.state.GroupName = $('#groupName').val();
+                });
+
+                $("#leave").click(function () {
+                    broadcaster.server.leave($('#groupName').val());
+                    broadcaster.state.GroupName = null;
+                });
+
+
+                $("#broadcast").click(function () {
+                    broadcaster.server.broadcastMessage({
+                        Name: $('#name').val(),
+                        Message: $('#message').val()
+                    });
+                });
+            });
+        });
+
+    </script>
+    <div>
+        Group Name: <input type="text" id="groupName" /><br>
+        Name: <input type="text" id="name" /><br>
+        <input type="button" id="join" value="Join" /><br>
+        <input type="button" id="leave" value="Leave" /><br>
+
+
+
+        Message: <input type="text" id="message" /><br>
+        <input type="button" id="broadcast" value="Broadcast" /><br>
+        <h3>Messages</h3><br>
+        <ul id="messages"></ul><br>
+    </div>
+</body>
+</html> 

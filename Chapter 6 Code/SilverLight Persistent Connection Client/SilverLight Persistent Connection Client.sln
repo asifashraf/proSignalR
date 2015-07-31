@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverLight Persistent Connection Client", "SilverLight Persistent Connection Client\SilverLight Persistent Connection Client.csproj", "{13C0727A-C250-4C0A-88B4-2F0BC6E3B2CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverLight Persistent Connection Client.Web", "SilverLight Persistent Connection Client.Web\SilverLight Persistent Connection Client.Web.csproj", "{DDD1617B-1B48-4209-A8E6-F8E76A7C06D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13C0727A-C250-4C0A-88B4-2F0BC6E3B2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C0727A-C250-4C0A-88B4-2F0BC6E3B2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C0727A-C250-4C0A-88B4-2F0BC6E3B2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C0727A-C250-4C0A-88B4-2F0BC6E3B2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD1617B-1B48-4209-A8E6-F8E76A7C06D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD1617B-1B48-4209-A8E6-F8E76A7C06D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD1617B-1B48-4209-A8E6-F8E76A7C06D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD1617B-1B48-4209-A8E6-F8E76A7C06D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

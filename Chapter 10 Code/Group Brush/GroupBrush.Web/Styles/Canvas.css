@@ -1,0 +1,111 @@
+﻿div#mainContent{
+float: left;
+width: 600px;
+height: 600px;
+border: solid 2px black;
+}
+div#sideContent{
+float: left;
+width: 300px;
+height: 600px;
+}
+div#canvasContainer{
+border-bottom: 1px solid black;
+}
+div#toolboxContainer{
+width: 600px;
+height: 100px;
+margin-top: 20px;
+}
+div#toolboxContainer{
+width: 600px;
+height: 100px;
+}
+div#toolboxContainer div.brushes {
+width: 110px;
+float: left;
+}
+div#toolboxContainer div.colors {
+width: 430px;
+float: left;
+}
+div#toolboxContainer div.colors div#Red {
+background-color: #FF0000;
+}
+div#toolboxContainer div.colors div#Orange {
+background-color: #FFA500;
+}
+div#toolboxContainer div.colors div#Yellow {
+background-color: #FFFF00;
+}
+div#toolboxContainer div.colors div#Green {
+background-color: #00FF00;
+}
+div#toolboxContainer div.colors div#Blue {
+background-color: #0000FF;
+}
+div#toolboxContainer div.colors div#Purple {
+background-color: #800080;
+}
+div#toolboxContainer div.colors div#Brown {
+background-color: #A52A2A;
+}
+div#toolboxContainer div.colors div#Black {
+background-color: #000000;
+}
+div#toolboxContainer div.actions {
+width: 50px;
+float: left;
+}
+div#toolboxContainer div.tool {
+width: 50px;
+height: 50px;
+float: left;
+border: 1px solid black;
+text-align: center;
+}
+div#toolboxContainer div.selected {
+border: 5px solid #AAAAAA;
+width: 42px;
+height: 42px;
+}
+div#onlineUsersContainer{
+border: 1px solid black;
+margin: 0px 10px 10px 10px;
+height: 200px;
+}
+div#chatContainer{
+border: 1px solid black;
+margin: 10px;
+height: 290px;
+position: relative;
+}
+div#chatInputContainer{
+position:absolute;
+bottom: 0px;
+}
+div#sideContent ul li {
+list-style: none;
+}
+div#sideContent span{
+margin-left: 4px;
+}
+div#sideContent input{
+margin-left: 4px;
+width: 210px;
+}
+div#canvasContent{
+display:none;
+}
+div#syncingCanvasContent{
+display:none;
+}
+div#reloadCanvasContent{
+display:none;
+}
+body{
+touch-action:none;
+}
+canvas#scratchCanvas{
+-ms-user-select:none;
+}

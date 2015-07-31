@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="GroupBrush.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WorkerRole name="GroupBrush.Worker" vmsize="Small">
+    <ConfigurationSettings>
+      <Setting name="GroupBrushDB" />
+      <Setting name="GroupBrushRedisHostname" />
+      <Setting name="GroupBrushRedisPassword" />
+      <Setting name="UseRedis" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="SignalREndpoint" protocol="http" port="80" localPort="80" />
+    </Endpoints>
+  </WorkerRole>
+</ServiceDefinition>

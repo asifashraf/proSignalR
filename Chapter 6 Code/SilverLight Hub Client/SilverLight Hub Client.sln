@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverLight Hub Client", "SilverLight Hub Client\SilverLight Hub Client.csproj", "{CF27847B-F054-4543-99FA-4E761E8CD9F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverLight Hub Client.Web", "SilverLight Hub Client.Web\SilverLight Hub Client.Web.csproj", "{35E5529F-86B2-43DA-B8C2-8DA9D5BB8607}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF27847B-F054-4543-99FA-4E761E8CD9F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF27847B-F054-4543-99FA-4E761E8CD9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF27847B-F054-4543-99FA-4E761E8CD9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF27847B-F054-4543-99FA-4E761E8CD9F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E5529F-86B2-43DA-B8C2-8DA9D5BB8607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E5529F-86B2-43DA-B8C2-8DA9D5BB8607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E5529F-86B2-43DA-B8C2-8DA9D5BB8607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E5529F-86B2-43DA-B8C2-8DA9D5BB8607}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

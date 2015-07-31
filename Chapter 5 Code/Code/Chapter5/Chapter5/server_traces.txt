@@ -1,0 +1,28 @@
+Microsoft.Owin.Host.SystemWeb.OwinAppContext Information: 0 : Support for WebSockets has been detected.
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.Transports.WebSocketTransport Information: 0 : Abort(9657ddf3-e837-4217-a87b-0446560101a9)
+SignalR.Transports.WebSocketTransport Information: 0 : End(9657ddf3-e837-4217-a87b-0446560101a9)
+SignalR.Transports.WebSocketTransport Verbose: 0 : DrainWrites(9657ddf3-e837-4217-a87b-0446560101a9)
+SignalR.Transports.WebSocketTransport Information: 0 : CompleteRequest (9657ddf3-e837-4217-a87b-0446560101a9)
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.Transports.WebSocketTransport Information: 0 : Abort(caee0072-465f-41c8-91a5-579dbdca44c1)
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.Transports.WebSocketTransport Information: 0 : End(caee0072-465f-41c8-91a5-579dbdca44c1)
+SignalR.Transports.WebSocketTransport Verbose: 0 : DrainWrites(caee0072-465f-41c8-91a5-579dbdca44c1)
+SignalR.Transports.WebSocketTransport Information: 0 : CompleteRequest (caee0072-465f-41c8-91a5-579dbdca44c1)
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.Transports.WebSocketTransport Information: 0 : Abort(e4f0be21-936f-4bd5-a6dc-a3fc992c71b3)
+SignalR.Transports.WebSocketTransport Information: 0 : End(e4f0be21-936f-4bd5-a6dc-a3fc992c71b3)
+SignalR.Transports.WebSocketTransport Verbose: 0 : DrainWrites(e4f0be21-936f-4bd5-a6dc-a3fc992c71b3)
+SignalR.Transports.WebSocketTransport Information: 0 : CompleteRequest (e4f0be21-936f-4bd5-a6dc-a3fc992c71b3)
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+Microsoft.Owin.Host.SystemWeb.OwinAppContext Information: 0 : Support for WebSockets has been detected.
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.HubDispatcher Information: 0 : The groups token is missing
+SignalR.Transports.WebSocketTransport Information: 0 : Abort(07a59910-d353-484d-b4f1-3bb909ff7237)
+SignalR.Transports.WebSocketTransport Information: 0 : End(07a59910-d353-484d-b4f1-3bb909ff7237)
+SignalR.Transports.WebSocketTransport Verbose: 0 : DrainWrites(07a59910-d353-484d-b4f1-3bb909ff7237)
+SignalR.Transports.WebSocketTransport Information: 0 : CompleteRequest (07a59910-d353-484d-b4f1-3bb909ff7237)

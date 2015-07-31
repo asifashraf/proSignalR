@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="GroupBrush.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="GroupBrush.Worker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="GroupBrushDB" value="Insert connection string" />
+      <Setting name="GroupBrushRedisHostname" value="Insert hostname string" />
+      <Setting name="GroupBrushRedisPassword" value="Insert password string" />
+      <Setting name="UseRedis" value="false" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
