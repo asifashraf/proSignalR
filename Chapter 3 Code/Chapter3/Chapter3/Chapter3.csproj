@@ -87,6 +87,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="lib\bootstrap.css" />
+    <Content Include="lib\bootstrap.js" />
+    <Content Include="lib\jquery.js" />
+    <Content Include="lib\signalR.js" />
+    <Content Include="main.js" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />

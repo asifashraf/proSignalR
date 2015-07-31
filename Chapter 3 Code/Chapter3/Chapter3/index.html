@@ -1,59 +1,50 @@
 ﻿<!DOCTYPE html>
 <html xmlns=" http://www.w3.org/1999/xhtml ">
-<head runat="server">
+<head>
+
     <title>Chapter 3 - Getting Started with Hub Implementation</title>
-</head>
-<body>
-    <script src="Scripts/jquery-1.6.4.js"></script>
-    <script src="Scripts/jquery.signalR-2.1.2.js"></script>
+
+    <link href="/lib/bootstrap.css" rel="stylesheet">
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/bootstrap.js"></script>
+    <script src="/lib/signalR.js"></script>
+
     <script src="/signalr/hubs" type="text/javascript"></script>
-    <script type="text/javascript">
-        function logg(a,b) {
-            console.log(a, b);
-        }
 
-        $(function () {
-            var broadcaster = $.connection.firstHub;
-            broadcaster.client.displayText = function (name, message) {
-                logg(name, message);
-                $('#messages').append('<li>' + name + ' said: ' + message + '</li>');
-            };
+    <script type="text/javascript" src="/main.js"></script>
 
-            $.connection.hub.start().done(function () {
-                $("#join").click(function () {
-                    console.log("join clicked");
-                    broadcaster.server.join($('#groupName').val());
-                    broadcaster.state.GroupName = $('#groupName').val();
-                });
+</head>
+<body style="padding: 30px">  
+    
 
-                $("#leave").click(function () {
-                    broadcaster.server.leave($('#groupName').val());
-                    broadcaster.state.GroupName = null;
-                });
+    <form>
+        <div class="form-group">
+            <label>Group Name:</label>
+            <input class="form-control" type="text" id="groupName" value="Tekken Pakistan" />
+        </div>
 
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" id="name" class="form-control" value="Asif Ashraf" />
+        </div>
 
-                $("#broadcast").click(function () {
-                    broadcaster.server.broadcastMessage({
-                        Name: $('#name').val(),
-                        Message: $('#message').val()
-                    });
-                });
-            });
-        });
+        <input type="button" id="join" value="Join" class="btn btn-primary" />
+        <input type="button" id="leave" value="Leave" class="btn btn-danger" />
 
-    </script>
+        <div class="form-group">
+            <label>Message:</label>
+            <input type="text" id="message" value="hi" class="form-control" />
+        </div>
+
+        <input type="button" id="broadcast" value="Broadcast" class="btn btn-primary" />
+    </form>
+
+    <h3>Messages</h3>
+    <br>
+    <ul id="messages"></ul>
+    <br>
     <div>
-        Group Name: <input type="text" id="groupName" /><br>
-        Name: <input type="text" id="name" /><br>
-        <input type="button" id="join" value="Join" /><br>
-        <input type="button" id="leave" value="Leave" /><br>
-
-
-
-        Message: <input type="text" id="message" /><br>
-        <input type="button" id="broadcast" value="Broadcast" /><br>
-        <h3>Messages</h3><br>
-        <ul id="messages"></ul><br>
+        
     </div>
 </body>
 </html> 
